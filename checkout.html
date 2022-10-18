@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <!-- Font Awesome Link -->
+    <script src="https://kit.fontawesome.com/ab9ef61c0d.js" crossorigin="anonymous"></script>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="checkout-nav">
+        <div class="nav-title">
+            <a href="index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf1t7GtsrXy9U7QSUFAX0Cd_tjYuFXBT1paQ&usqp=CAU" alt="icon" id="checkout-logo"></a>
+            <p class="form-steps">
+                <i class="fa-solid fa-circle-check" id="step1"></i>
+                Shopping cart
+                <span class="line1">------</span>
+                <i class="fa-solid fa-2" id="step2"></i>
+                Checkout
+                <span class="line2">------</span>
+                <i class="fa-solid fa-3" id="step3"></i>
+                Finish
+            </p>
+        </div>
+    </div>
+    <!-- Form Start -->
+    <div class="checkout-form">
+        <div class="shipping-info">
+            <h3>Getting your order</h3>
+            <hr>
+            <h4>Shipping Information</h4>
+            <div>
+                <div class="user-info">
+                    <label for="first-name">First Name</label>
+                    <input type="text" placeholder="" required="">
+                </div>
+                <div class="user-info">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" placeholder="" required="">
+                </div>
+                <div class="user-info">
+                    <div class="address">
+                        <label for="address">Address</label>
+                        <input type="text" placeholder="" required="">
+                        <label for="address">Address 2 (Optional)</label>
+                        <input type="text" placeholder="" required="">
+                    </div>
+                </div>
+                <div class="user-info">
+                    <label for="city">City</label>
+                    <select id="city" required="">
+                      <option value="">Choose...</option>
+                      <option>Pasay City</option>
+                    </select>
+                </div>
+                <div class="user-info">
+                    <label for="country">Country</label>
+                    <select id="country" required="">
+                      <option value="">Choose...</option>
+                      <option>Philippines</option>
+                    </select>
+                </div>
+                <div class="user-info">
+                    <label for="zip">Zip</label>
+                    <input type="number" id="zip" placeholder="" required="">
+                </div>
+                <div class="user-billing-info">
+                    <input type="checkbox">
+                    <label for="billing">Save this as my billing address</label>
+                </div>
+            </div>
+            <hr>
+            <h4>Contact Information</h4>
+                <div class="contact-info">
+                    <label for="email">Email-Address</label>
+                    <input type="email" id="emailAdd" placeholder="" required="">
+                </div>
+                <div class="contact-info">
+                    <label for="number">Phone Number</label>
+                    <input type="number" id="phoneNo" placeholder="" required="">
+                </div>
+                <div class="contact-info">
+                    <input type="checkbox">
+                    <label for="updates">Text me updates about my Wizdom order.</label>
+                </div>
+        </div>
+        <div class="summary">
+            <h3>Order Summary</h3>
+            <p>Shipping</p>
+            <div class="order-summary">
+                <img src="images/image1.jpg" alt="">
+                <h6>
+                    Description:
+                    <br> 
+                    To Kill A Mockingbird (1960) by Harper Lee
+                </h6>
+                <h6>
+                    Price:
+                    <br>
+                    Php 2,589.00
+                </h6>
+            </div>
+            <h4>Accepted Methods of Payment</h4>
+            <div class="payment-info">
+                <div class="payment-method">
+                    <input id="credit" name="paymentMethod" type="radio" checked="" required="">
+                    <label for="credit">Credit card</label>
+                </div>
+                <div class="payment-method">
+                    <input id="debit" name="paymentMethod" type="radio" required="">
+                    <label for="debit">Debit card</label>
+                </div>
+                <div class="payment-method">
+                    <input id="gcash" name="paymentMethod" type="radio" required="">
+                    <label for="gcash">GCash</label>
+                </div>
+                <div class="payment-method">
+                    <input id="paypal" name="paymentMethod" type="radio" required="">
+                    <label for="paypal">Paypal</label>
+                </div>
+                <div class="payment-method">
+                    <input id="others" name="paymentMethod" type="radio" required="">
+                    <label for="others">Others</label>
+                </div>
+                <img src="https://t4.ftcdn.net/jpg/04/73/84/61/360_F_473846184_0k637f6855ZJqaulKqAmgJTEVGVibR1P.jpg" alt="">
+            </div>
+            <button class="pay-btn">Continue to Payment Information</button>
+        </div>
+    </div>
+    <!-- Form End -->
+    <!-- Footer Start -->
+    <footer class="footer">
+        <p>© 2022-2023 Wizd<i class="fa-solid fa-lightbulb"></i>m</p>
+        <a href="checkout.html">Back To Top</a>
+        <br>
+        <a href="library.html">Go Back To Library</a>
+    </footer>
+    <!-- Footer End -->
+</body>
+</html>

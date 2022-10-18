@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: pink; */
+    font-family: 'Poppins', sans-serif;
+}
+/* For Home Page */
+.main {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('https://mobirise.com/extensions/depotamp/assets/images/mbr-1920x1080.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-family: 'Concert One', cursive;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+.logo:hover {
+    color: #ffddd2;
+    outline-color: rgba(71, 126, 232, 0);
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    cursor: pointer;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #ffddd2;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+.nav-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.bg-message {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.bg-message h4 {
+    font-size: 20px;
+    margin: 10px 0 40px;
+}
+.btn-check-lib {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffddd2;
+    border: 1px solid;
+    padding: 12px 34px;
+    font-size: 18px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.btn-check-lib:hover {
+    background: #eaac8b;
+    transition: 1s;
+    color: black;
+}
+#closeBtn, #menuBtn {
+    display: none;
+}
+@media (max-width: 540px) {
+    .logo {
+        font-size: 20px;
+    }
+    .nav-links ul li {
+        display: none;
+    }
+    #menuBtn {
+        color: white;
+        display: block;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
+/* For Library */
+.navbar  {
+    height: 100vh;
+}
+.banner {
+    background-color: #ffddd2;
+    text-align: center;
+    height: 40vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('https://mobirise.com/extensions/depotamp/assets/images/mbr-1920x1080.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+#icon img{
+    width: 90px;
+    border-radius: 50px;
+    margin-top: 25px;
+}
+#brand {
+    font-family: 'Concert One', cursive;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
+}
+#brand:hover {
+    color: #ffddd2;
+}
+.banner-links {
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+}
+.banner-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    cursor: pointer;
+}
+.banner-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #ffddd2;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.banner-links ul li:hover::after {
+    width: 100%;
+}
+.banner-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.filter select {
+    width: 100px;
+}
+.filter input {
+    font-size: 12px;
+    width: 200px;
+}
+#search-label {
+    background-color: #ccc5b9;
+    padding: 1px;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+}
+#search-label:hover {
+    color: rgba(30, 31, 32, 0.7);
+}
+.advertisement {
+    padding-top: 30px;
+    background: rgba(74, 64, 64, 0.1);
+}
+.ads {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-between;
+}
+.ads img {
+    width: 20%;
+}
+.advertisement #see-details {
+    margin-top: 3%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.advertisement h3 {
+    font-family: 'Concert One', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+.book-container {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwxio9ttaIzohDcCq0nAAfbIMKcpzGHtl3RA&usqp=CAU');
+    font-family: 'Concert One', cursive;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0;
+    padding-top: 5%;
+    flex-wrap: wrap;
+}
+.book-container .card {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeB_uqRf1HubeWTrmIhMp87rHqipzPUvEyrA&usqp=CAU');
+    font-family: 'Concert One', cursive;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 250px;
+    height: auto;
+    margin: 20px 10px;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+}
+.book-cover {
+    width: 100%;
+    height: 410px;
+    border-radius: 20px 20px 0 0;
+}
+.book-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+}
+.book-info p {
+    padding: 0 10px;
+    text-align: center;
+}
+.book-info .read-more {
+    display: none;
+}
+.buttons {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    align-self: flex-end;
+}
+.btn-cart {
+    background-color: #d8a48f;
+    text-decoration: none;
+    color: black;
+    flex: 2;
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 0 20px;
+    transition: 1s;
+}
+.btn-cart:hover {
+    color: white;
+}
+.btn-wishlist {
+    background-color: #ffd5c2;
+    text-decoration: none;
+    color: black;
+    flex: 2;
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+.btn-wishlist:hover {
+    color: white;
+}
+.btn-buy {
+    background-color: #ffb5a7;
+    text-decoration: none;
+    color: black;
+    flex: 3;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 20px 0;
+    transition: 1s;
+}
+.btn-buy:hover {
+    color: white;
+}
+.buttons i {
+    font-size: large;
+    margin-bottom: 2px;
+}
+.footer {
+    text-align: center;
+    padding: 30px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoWE7xK8QF79EfmpVtfEI10TFlu4vCovnf3g&usqp=CAU');
+    font-family: 'Concert One', cursive;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: .9;
+    padding: 10px;
+}
+.footer a {
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    width: 200px;
+}
+.footer a:hover {
+    border: #edf6f9 solid 1px;
+    background:#fff;
+}
+@media (max-width: 540px) {
+    #search-label {
+        display: none;
+    }
+    .banner-links ul li a{
+        font-size: 12px;
+    }
+    .ads img {
+        width: 100px;
+    }
+    .book-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .book-container .card {
+        flex-direction: row;
+        height: auto;
+        width: 90%;
+    }
+    .book-cover {
+        height: auto;
+        width: 150px;
+        border-radius: 20px 0 0 20px;
+    }
+    .book-info {
+        border-radius: 0 20px 20px 0;
+        flex: 1;
+    }
+    .book-info span {
+        display: none;
+    }
+    .btn-cart {
+        border-radius: 0;
+    }
+    .book-info .read-more {
+        display: block;
+    }
+}   
+/* For Checkout */
+.checkout-nav {
+    background-color: #eee2df;
+    height: 10vh;
+}
+.nav-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title a {
+    text-decoration: none;
+    cursor: pointer;
+}
+#checkout-logo {
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 60px;
+    border-radius: 30px;
+}
+.nav-title p {
+    margin-right: 25px;
+}
+.nav-title span {
+    font-size: 15px;
+    text-decoration-line: line-through;
+    font-weight: 50px;
+}
+#step1 {
+    color: green;
+}
+#step2 {
+    border: 2px solid green;
+    padding: 2px;
+    color: green;
+    border-radius: 40px;
+}
+#step3 {
+    border: 2px solid gray;
+    padding: 2px;
+    color: gray;
+    border-radius: 30px;
+}
+.checkout-form {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhIVFRUVFxcVFxcXFxcXFxcXFx0YFxcXFxcdHSggHRolHRcXIjEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0NFQ0PFS0dFR0tKy0rKy0tLSstKys3NysrNystKystLTc3Ky0tLSsrNy0tLS03LS0tNy0tNy0tKzcrK//AABEIAT4AnwMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAAAAQIDB//EAB4QAQEBAQEBAAIDAAAAAAAAAAARARIC8GGRIUFx/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAECBAP/xAAWEQEBAQAAAAAAAAAAAAAAAAAAESH/2gAMAwEAAhEDEQA/APHUaHZHnWRqEIVEaSEDRYEGVUhCoLAgiRqJCFSKoQrI0QhURohBYsaIrLBG4QGYkbzDMBgjcTMBIkbhArOGY1CAxCNwCswi5iwGIsahAYzFiwgVuGY6T7+SKzXOEdMxN8gxmEbiwGIkbi75CucI3FgjnDMdOUgtY3COkSAxCOkSAxCNxeQc4bjcWA3ykdIRWaxyctwgVzixvk5CufK8/hvfJArETl1iQWscpHSLArnE3HTk5ErG+SNxYLXOHLcIJXOLG+VzyFbzDl05ORHOHLpCA58kdeU3Ac59COkMwHOLuN8kBzhnl1TMBzI6cmeQc4cukOQc4cukMwHPkjpF5BuHLpmEBz5OXTcIDnyR05MwHPfJmOkIDnyR0zDcBz5I6ckBzzDl0hAc4cukMwHOHLpCA575OXTkgOvKR0hyDHKR05IDnmHLpmHIMcpy6Q5Bz5XluHIOfJHSJAY5OXTk5BjlOXSHIOcOXTkgOcXlqLvkHTMOXSHIOfJHSJyDG+TcdOSA58kdIZgOe4cunJyDnCOkIDnyR0n0IDmsai8g58kdOTkHOGY6QgOkSOkIDnCOnJAYzynLpyuYDkR05M8gxvlHXlN8gxmJnl05IDnyY6ZhAYicumeTkHOLmN75IDnF5b5OQbhHSJmAzEjpyQHPMMx0zDkHOGY6Q3yDnFjcOQcyOkIDnCOkOQc+TMbiwHOEdOSA5xY1F3yDcI3uHIMQjcIDEI3yYDEP03DcBiEbhAYhG4cgxuEbhAYhG4vIOfI3FBzhG+TPIN5hGougxCNwgMQjcTcBmLmNQgMQbAYhG4ZgMff0RqLmAxDcaiwGMwjZAYg3CA1FxcxYDHJGyAwsazCAxDMbiQGcN8tw3AYhG4bgM4kbIDGYNRcwGYkbhmAxFa3CA1E5bhmAzCNEBmEawBmEaIDEWNQBmGY0AzuEaAZhGiAzCNQBhY1AGs8puNZgCJGoAm4NJuAzF5aMwGd8kWLAZmHKwgJhGkzASG4sWAzCKsBnkixYCwikBIRQERpYDMFhgJCLCfUEiZjWGAyrUqQEhuLgCbhF3AEIoC4oC4IqhjOGNAJExpIBpBdBE1owMZWLEBFDAEVcDGYqm4IEU3BRNxYQExYighv+qs/IMigGpiw0DQNwEGkgUBYFZWGmBVFwFSCw0EIqQDcFhgJRQEFMBNwhFwEKLoJgpgIYpAIQABYmAEMKCLhSgENADFQCIugAZoBAXcBCGqD/2Q==');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+.shipping-info {
+    border: 2px solid white;
+    padding: 15px;
+    margin: 10px;
+}
+.user-billing-info {
+    margin: 10px;
+}
+.contact-info {
+    margin: 10px;
+}
+.user-info {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.address {
+    display: flex;
+    flex-direction: column;
+}
+.summary {
+    border: 2px solid white;
+    padding: 15px;
+}
+.order-summary {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-align: center;
+}
+.order-summary img {
+    width: 70px;
+    align-self: center;
+    margin-top: 10px;
+}
+.payment-info img {
+    width: 250px;
+    margin-top: 10px;
+}
+.pay-btn {
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-top: 10px;
+    cursor: pointer; 
+}
+.pay-btn:hover {
+    background: #e29578;
+    color: black;
+}
+@media (max-width: 540px) {
+    .checkout-nav {
+        padding-bottom: 5px;
+    }
+    .form-steps {
+        font-size: 10px;
+    }
+    .form-steps span{
+        display: none;
+    }
+    .checkout-form {
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+    .payment-info img {
+        margin-left: 100px;
+    }
+    .pay-btn {
+        margin-left: 120px;
+    }
+
+}
